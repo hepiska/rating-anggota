@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "anggota",
+  "info": {
+    "name": "anggota",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nama": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "pangkat": {
+      "default": "",
+      "type": "string"
+    },
+    "nomor_telpon": {
+      "default": "",
+      "type": "string"
+    },
+    "gambar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "ratings": {
+      "collection": "rating",
+      "via": "anggota",
+      "columnName": "anggota"
+    },
+    "nrp": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

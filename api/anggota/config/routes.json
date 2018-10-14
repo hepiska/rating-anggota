@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/anggotas",
+      "handler": "Anggota.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anggotas/count",
+      "handler": "Anggota.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+        "method": "GET",
+        "path": "/anggotas/average-review",
+        "handler": "Anggota.averageReview",
+        "config": {
+          "policies": []
+        }
+    },
+    {
+      "method": "GET",
+      "path": "/anggotas/:_id",
+      "handler": "Anggota.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/anggotas",
+      "handler": "Anggota.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/anggotas/:_id",
+      "handler": "Anggota.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/anggotas/:_id",
+      "handler": "Anggota.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

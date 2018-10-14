@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "rating",
+  "info": {
+    "name": "rating",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "anggota": {
+      "columnName": "_id",
+      "model": "anggota",
+      "via": "ratings"
+    },
+    "keramahan": {
+      "default": "",
+      "type": "integer",
+      "max": 6
+    },
+    "performa": {
+      "default": "",
+      "type": "integer",
+      "max": 6
+    },
+    "umum": {
+      "default": "",
+      "max": 6,
+      "type": "integer"
+    }
+  }
+}
